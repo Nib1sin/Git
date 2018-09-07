@@ -8,4 +8,4 @@ git branch -d NombreBranch					// Se elimina el branch indicado
 git branch -b NombreBranch					// Crea un branch con el nombre indicado y cambia a la misma
 git merge NombreBranch						// Une el branch seleccionado al branch en el que te encuentras
 											// Fast forward es solo posible cuando no hay commits en donde sea desea unir
-											
+git mergetool								// Nos abre P4Merge para gestionar el conflicto entre commits 											
