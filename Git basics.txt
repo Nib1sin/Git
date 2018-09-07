@@ -72,3 +72,11 @@ git difftool HEAD										// Usa P4Merge (configurado previamente) para ver las
 git diff --staged HEAD									// Muestra las diferencias entre lo que esta en Staging y Repository
 git difftool --staged HEAD								// Usa P4Merge (configurado previamente) para ver las diferencias entre S y R
 
+git diff HEAD HEAD^										// Muestra las diferencias entre el ultimo commit y el commit anterior
+git difftool HEAD HEAD^									// Usa P4Merge (configurado previamente) para ver las diferencias entre el ultimo commit y el anterior
+
+git diff dasdsa dsadsa									// Muestra las diferencias entre un commit y otro
+git difftool dsadsa sadsad								// Usa P4Merge (configurado previamente) para ver las diferencias entre un commit y otro
+
+git diff master origin/master							// Muestra las diferencias entre el repositorio local y el repositorio de github
+git difftool master origin/master						// Usa P4Merge (configurado previamente) para ver las diferencias entre Local y Github
