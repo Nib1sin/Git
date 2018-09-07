@@ -1,0 +1,8 @@
+
+
+git branch -a								// Muestra todos los branchs del Repositorio
+git branch NombreBranch						// Crea un branch con el nombre indicado
+git checkout NombreBranch					// Cambia de branch al indicado
+git branch -m NombreBranch NuevoNombre		// Cambia de nombre al branch seleccionado por uno nuevo
+git branch -d NombreBranch					// Se elimina el branch indicado
+git branch -b NombreBranch					// Crea un branch con el nombre indicado y cambia a la misma
