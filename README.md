@@ -1,1 +1,7 @@
-# Pruebita
+# Git
+
+## Comandos basicos
+
+## Tools
+
+## Documentacion adicional
