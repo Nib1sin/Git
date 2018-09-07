@@ -8,20 +8,24 @@ ll									// Nos da una lista con detalles de los archivos
 
 
 
+git init								// crea repositorio git	
+echo "# Pruebita" >> README.md						// Creando el archivo readme
+git add									// Anades una file en especifico
+git add .								// Anades todo							
+git commit -m "Mensaje"							// agrega un mensaje al commit
+git remote add origin https://github.com/Nib1sin/Querys.git		// url del repositorio en github
+git push -u origin master						// sube los archivos
+git pull origin master							// verificar el repositorio en github
+
+
+
+
 git status								// Nos muestra el status en git
 git config --global --list						// Nos muestra una lista con las configuraciones
 subl ~/.gitconfig							// Abrir la configuracion de git con sublime3 (path)
 ls									// Nos da una lista con el contenido del directorio
 ls -all									// una lista con TODOS los archivos del dir
 
-
-
-
-git init								// crea repositorio git								
-git commit -m "Mensaje"							// agrega un mensaje al commit
-git remote add origin https://github.com/Nib1sin/Querys.git		// url del repositorio en github
-git push -u origin master						// sube los archivos
-git pull origin master							// verificar el repositorio en github
 
 
 
@@ -42,6 +46,7 @@ git add -A 								// Agrega cualquier cambio que haya sido realizado (renombrar
 
 
 
+
 git log									// Nos muestra los cambios realizados
 git log --oneline --graph --decorate					// Nos muestra en una linea los cambios realizados
 git log eqwdasd...dsadsad						// Nos muestra los cambios desde un punto a otro
@@ -50,6 +55,9 @@ git log -- cambioNombre.txt						// Nos muestra los cambios a un solo file o car
 git show dasdsadas							// Nos muestra cambio detallados de un commit
 
 git config --global alias.hist "log --all --graph --decorate --oneline" // Le damos un alias a lo que esta entre comillas, un atajo
+
+
+
 
 
 subl .gitignore								// Se crea el gitIgnore colocando .DS_Store
