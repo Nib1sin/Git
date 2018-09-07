@@ -29,30 +29,30 @@ ls -all									// una lista con TODOS los archivos del dir
 
 
 
-git commit -am "Mensaje de update"					// agrega una actualizacion a git
-git ls-files								// nos da una lista de todos los archivos .git
-git -rm -rf .txt							// elimina todos los archivos con referencia .txt
-git -rm -rf NombreCarpeta						// elimina la carpeta con el nombre indicado
-git rm Archivo.txt							// elimina un archivo .git con el nombre indicado
-rm Archiv.txt 								// elimina un archivo con el nombre indicado
+git commit -am "Mensaje de update"						// agrega una actualizacion a git
+git ls-files											// nos da una lista de todos los archivos .git
+git -rm -rf .txt										// elimina todos los archivos con referencia .txt
+git -rm -rf NombreCarpeta								// elimina la carpeta con el nombre indicado
+git rm Archivo.txt										// elimina un archivo .git con el nombre indicado
+rm Archiv.txt 											// elimina un archivo con el nombre indicado
 
-git reset HEAD cambioNombre.txt						// Quita el cambio realizado en el file
-git checkout -- cambioNombre.txt					// anade el archivo si ha sido eliminado previamente
-git mv prueba.txt cambioNombre.txt					// cambiar el nombre desde git bash de x a y
-									// se puede revertir cambiando de posicion los nombres
+git reset HEAD cambioNombre.txt							// Quita el cambio realizado en el file
+git checkout -- cambioNombre.txt						// anade el archivo si ha sido eliminado previamente
+git mv prueba.txt cambioNombre.txt						// cambiar el nombre desde git bash de x a y
+														// se puede revertir cambiando de posicion los nombres
 git mv cambioNombre.txt NuevaCarpeta					// mover el archivo a una nueva carpeta
 
-git add -A 								// Agrega cualquier cambio que haya sido realizado (renombrar, eliminar, restaurar)
+git add -A 												// Agrega cualquier cambio que haya sido realizado (renombrar, eliminar, restaurar)
 
 
 
 
-git log									// Nos muestra los cambios realizados
+git log													// Nos muestra los cambios realizados
 git log --oneline --graph --decorate					// Nos muestra en una linea los cambios realizados
-git log eqwdasd...dsadsad						// Nos muestra los cambios desde un punto a otro
-git log --since="5 days ago"						// Nos muestra los cambios realizados hace 5 dias
-git log -- cambioNombre.txt						// Nos muestra los cambios a un solo file o carpeta
-git show dasdsadas							// Nos muestra cambio detallados de un commit
+git log eqwdasd...dsadsad								// Nos muestra los cambios desde un punto a otro
+git log --since="5 days ago"							// Nos muestra los cambios realizados hace 5 dias
+git log -- cambioNombre.txt								// Nos muestra los cambios a un solo file o carpeta
+git show dasdsadas										// Nos muestra cambio detallados de un commit
 
 git config --global alias.hist "log --all --graph --decorate --oneline" // Le damos un alias a lo que esta entre comillas, un atajo
 
@@ -60,10 +60,15 @@ git config --global alias.hist "log --all --graph --decorate --oneline" // Le da
 
 
 
-subl .gitignore								// Se crea el gitIgnore colocando .DS_Store
- .DS_Store 								// Dentro del archivo especificamos que archivos queremos que sean ignorados por git
+subl .gitignore											// Se crea el gitIgnore colocando .DS_Store
+ .DS_Store 												// Dentro del archivo especificamos que archivos queremos que sean ignorados por git
+	
+git diff												// Muestra las diferencias entre lo que esta en Workdirectory y Staging
+git difftool											// Usa P4Merge (configurado previamente) para ver las diferencias entre W y S
 
+git diff HEAD											// Muestra las diferencias entre lo que esta en Workdirectory y Repository(.git folder) 
+git difftool HEAD										// Usa P4Merge (configurado previamente) para ver las diferencias entre W y R
 
-
-
+git diff --staged HEAD									// Muestra las diferencias entre lo que esta en Staging y Repository
+git difftool --staged HEAD								// Usa P4Merge (configurado previamente) para ver las diferencias entre S y R
 
