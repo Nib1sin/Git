@@ -1,11 +1,16 @@
 
+git checkout NombreBranch					// Cambia de branch al indicado
 
 git branch -a								// Muestra todos los branchs del Repositorio
 git branch NombreBranch						// Crea un branch con el nombre indicado
-git checkout NombreBranch					// Cambia de branch al indicado
 git branch -m NombreBranch NuevoNombre		// Cambia de nombre al branch seleccionado por uno nuevo
 git branch -d NombreBranch					// Se elimina el branch indicado
 git branch -b NombreBranch					// Crea un branch con el nombre indicado y cambia a la misma
+
 git merge NombreBranch						// Une el branch seleccionado al branch en el que te encuentras
 											// Fast forward es solo posible cuando no hay commits en donde sea desea unir
-git mergetool								// Nos abre P4Merge para gestionar el conflicto entre commits 											
+git mergetool								// Nos abre P4Merge para gestionar el conflicto entre commits 
+
+git rebase master							// Agrega los cambios del branch en que te encuentras al branch master
+		
+							
