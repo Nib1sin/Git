@@ -12,5 +12,6 @@ git merge NombreBranch						// Une el branch seleccionado al branch en el que te
 git mergetool								// Nos abre P4Merge para gestionar el conflicto entre commits 
 
 git rebase master							// Agrega los cambios del branch en que te encuentras al branch master
+git rebase --abort							// Aborta el rebase que se ha realizado
 		
 							
