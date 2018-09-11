@@ -38,6 +38,8 @@ git stash drop								// Elimina el cambio que esta al iniciar
 git stash drop stash@{0}					// Elimina el Stash indicado por medio del indice {0}
 git stash clear								// Elimina toda la lista de stash
 
+git stash branch NombreBranch				// Creamos un nuevo Branch y cambiamos al mismo, al cual podemos anadir los stash
+
 
 
 
