@@ -6,6 +6,7 @@ git tag --delete NombreTag						// Elimina el tag indicado
 git tag --list									// Nos da una lista con todos los Tags
 git show NombreTag								// Nos muestra el tag senalado
 git tag -a NombreTag							// Anade una anotacion al tag indicado
+git tag NombreTag -m "Mensaje"					// Anade un tag con un mensaje
 
 git commit --amend								// Nos permite cambiar el mensaje del commit
 
