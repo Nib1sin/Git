@@ -1,0 +1,11 @@
+
+
+git reset HEAD^1							// Remueve un nivel del commit
+git reset HEAD^2							// Remueve dos niveles del commit
+
+git reflog									// Nos indica todos lo realizado
+
+git reset ValorCommit						// Resetea el cambio realizado del commit indicado por el valor
+git reset HEAD@{1}							// Resetea el cambio realizado del commit indicado por el HEAD
+
+git reset ValorCommit						// Resetea los commits hasta el valor indicado
