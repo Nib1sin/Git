@@ -7,11 +7,45 @@ git branch -m NombreBranch NuevoNombre		// Cambia de nombre al branch selecciona
 git branch -d NombreBranch					// Se elimina el branch indicado
 git branch -b NombreBranch					// Crea un branch con el nombre indicado y cambia a la misma
 
+
+
+
 git merge NombreBranch						// Une el branch seleccionado al branch en el que te encuentras
 											// Fast forward es solo posible cuando no hay commits en donde sea desea unir
 git mergetool								// Nos abre P4Merge para gestionar el conflicto entre commits 
 
+
+
+
 git rebase master							// Agrega los cambios del branch en que te encuentras al branch master
 git rebase --abort							// Aborta el rebase que se ha realizado
+
+
+
 		
+git stash									// Aparta el cambio realizado, asi no se visualizara hasta que sea anadido el stash
+											// solo se anaden los archivos trackeados
+git stash save "Mensaje a poner"			// Realiza el stash colocandole un mensaje											
+git stash -u								// Aparte los cambios realizados y archivos untrackeados al Stash
+											
+git stash list								// Nos muestra una lista con todos los cambios en Stash
+git stash show stash@{0}					// Muestra el Stash indicado por medio del indice {0}
+
+git stash pop								// Se anade solo el primer cambio que esta en el apartado stash
+git stash apply								// Anade los cambios que se han anadido al apartado Stash
+git stash apply stash@{1}					// Anade el Stash indicado por medio del indice {1}
+git stash drop								// Elimina el cambio que esta al iniciar
+git stash drop stash@{0}					// Elimina el Stash indicado por medio del indice {0}
+git stash clear								// Elimina toda la lista de stash
+
+
+
+
+
+
+
+
+
+
+											
 							
