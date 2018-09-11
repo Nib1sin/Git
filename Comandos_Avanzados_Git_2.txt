@@ -10,3 +10,5 @@ git tag NombreTag -m "Mensaje"					// Anade un tag con un mensaje
 
 git commit --amend								// Nos permite cambiar el mensaje del commit
 
+git diff NombreTag NombreTag2					// Nos muestra la diferencia entre dos Tags
+git difftool Nombretag NombreTag2				// Nos muestra la diferencia entre dos tags usando un P4merge
