@@ -15,3 +15,7 @@ git difftool Nombretag NombreTag2				// Nos muestra la diferencia entre dos tags
 
 git tag -a NombreTag IDdelCommit				// Se le da un tag a un commit por medio del ID, anadiendo un mensaje
 git tag -a NombreTag -f NombreTag2				// Se le cambia le cambia el tag de un commit a otro, anadiendo un mensaje
+
+git push origin NombreTag						// Anade a GitHub o nube, el tag indicado
+git push origin master --tags					// Anade todos los Tags que faltan a Github o nube
+git push origin :NombreTag						// Elimina el Tag indicado de Github o la nube
