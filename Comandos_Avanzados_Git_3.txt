@@ -9,3 +9,4 @@ git reset ValorCommit						// Resetea el cambio realizado del commit indicado po
 git reset HEAD@{1}							// Resetea el cambio realizado del commit indicado por el HEAD
 
 git reset ValorCommit						// Resetea los commits hasta el valor indicado
+git reset --hard HEAD~1						// Elimina los cambios hasta el penultimo Commit
