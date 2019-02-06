@@ -1,4 +1,10 @@
 
+git config --global user.name "Nibi-sin"				// Colocar el nombre en el sistema
+git config --global user.email nibi.sin@hotmail.com		// Colocar el e-mail en el sistema
+
+
+
+
 mkdir Nombre_de_carpeta							// crear una carpeta
 xcopy "direccion_carpeta" "direccion_aCopiar"				// copar de una carpeta a otra
 mv File.txt CarpetaNueva						// Mueve un archivo a una carpeta
