@@ -1,5 +1,6 @@
 
 git checkout NombreBranch					// Cambia de branch al indicado
+git checkout -f NombreBranch				// Cambia de branch forzando y borrando los cambios que lo impiden
 
 git branch -a								// Muestra todos los branchs del Repositorio
 git branch NombreBranch						// Crea un branch con el nombre indicado
