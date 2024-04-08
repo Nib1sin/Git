@@ -1,88 +1,78 @@
 
-git config --global user.name "Nibi-sin"				// Colocar el nombre en el sistema
-git config --global user.email nibi.sin@hotmail.com		// Colocar el e-mail en el sistema
+//Configuracion para el entorno de usuario
+git config --global user.name "Nibi-sin"									// Colocar el nombre en el sistema
+git config --global user.email nibi.sin@hotmail.com							// Colocar el e-mail en el sistema
 
 
 
-
-mkdir Nombre_de_carpeta							// crear una carpeta
-xcopy "direccion_carpeta" "direccion_aCopiar"				// copar de una carpeta a otra
-mv File.txt CarpetaNueva						// Mueve un archivo a una carpeta
-cp File.txt File.2018.09.07						// copia un archivo 
-ll									// Nos da una lista con detalles de los archivos
+//Inicio para crear un proyecto en git
+git init																	// crea repositorio git	
+git remote add origin https://github.com/Nib1sin/Querys.git					// url del repositorio en github
+echo "# Pruebita" >> README.md												// Creando el archivo readme
 
 
 
-
-git init								// crea repositorio git	
-echo "# Pruebita" >> README.md						// Creando el archivo readme
-git add									// Anades una file en especifico
-git add .								// Anades todo							
-git commit -m "Mensaje"							// agrega un mensaje al commit
-git remote add origin https://github.com/Nib1sin/Querys.git		// url del repositorio en github
-git push -u origin master						// sube los archivos
-git pull origin master							// verificar el repositorio en github
-
-
-
-
-git status								// Nos muestra el status en git
-git config --global --list						// Nos muestra una lista con las configuraciones
-subl ~/.gitconfig							// Abrir la configuracion de git con sublime3 (path)
-ls									// Nos da una lista con el contenido del directorio
-ls -all									// una lista con TODOS los archivos del dir
+//Comandos para el commit del proyecto			
+git add																		// Anades una file en especifico
+git add .																	// Anades todo							
+git commit -m "Mensaje"														// agrega un mensaje al commit
+git push -u origin master													// sube los archivos
+git pull origin master														// verificar el repositorio en github
+git status																	// Nos muestra el status en git
+git config --global --list													// Nos muestra una lista con las configuraciones
+subl ~/.gitconfig															// Abrir la configuracion de git con sublime3 (path)
 
 
 
-
-git commit -am "Mensaje de update"						// agrega una actualizacion a git
-git ls-files											// nos da una lista de todos los archivos .git
-git -rm -rf .txt										// elimina todos los archivos con referencia .txt
-git -rm -rf NombreCarpeta								// elimina la carpeta con el nombre indicado
-git rm Archivo.txt										// elimina un archivo .git con el nombre indicado
-rm Archiv.txt 											// elimina un archivo con el nombre indicado
-
-git reset HEAD cambioNombre.txt							// Quita el cambio realizado en el file
-git checkout -- cambioNombre.txt						// anade el archivo si ha sido eliminado previamente
-git mv prueba.txt cambioNombre.txt						// cambiar el nombre desde git bash de x a y
-														// se puede revertir cambiando de posicion los nombres
-git mv cambioNombre.txt NuevaCarpeta					// mover el archivo a una nueva carpeta
-
-git add -A 												// Agrega cualquier cambio que haya sido realizado (renombrar, eliminar, restaurar)
+//Comandos avanzados			
+git commit -am "Mensaje de update"											// agrega una actualizacion a git
+git ls-files																// nos da una lista de todos los archivos .git
+git -rm -rf .txt															// elimina todos los archivos con referencia .txt
+git -rm -rf NombreCarpeta													// elimina la carpeta con el nombre indicado
+git rm Archivo.txt															// elimina un archivo .git con el nombre indicado
+rm Archiv.txt 																// elimina un archivo con el nombre indicado
+git reset HEAD cambioNombre.txt												// Quita el cambio realizado en el file
+git checkout -- cambioNombre.txt											// anade el archivo si ha sido eliminado previamente
+git mv prueba.txt cambioNombre.txt											// cambiar el nombre desde git bash de x a y . se puede revertir cambiando de posicion los nombres
+git mv cambioNombre.txt NuevaCarpeta										// mover el archivo a una nueva carpeta
+git add -A 																	// Agrega cualquier cambio que haya sido realizado (renombrar, eliminar, restaurar)
+git config --global alias.hist "log --all --graph --decorate --oneline" 	// Le damos un alias a lo que esta entre comillas, es un atajo
 
 
 
-
-git log													// Nos muestra los cambios realizados
-git log --oneline --graph --decorate					// Nos muestra en una linea los cambios realizados
-git log eqwdasd...dsadsad								// Nos muestra los cambios desde un punto a otro
-git log --since="5 days ago"							// Nos muestra los cambios realizados hace 5 dias
-git log -- cambioNombre.txt								// Nos muestra los cambios a un solo file o carpeta
-git show dasdsadas										// Nos muestra cambio detallados de un commit
-
-git config --global alias.hist "log --all --graph --decorate --oneline" // Le damos un alias a lo que esta entre comillas, un atajo
+//Comandos de log			
+git log																		// Nos muestra los cambios realizados
+git log --oneline --graph --decorate										// Nos muestra en una linea los cambios realizados
+git log eqwdasd...dsadsad													// Nos muestra los cambios desde un punto a otro
+git log --since="5 days ago"												// Nos muestra los cambios realizados hace 5 dias
+git log -- cambioNombre.txt													// Nos muestra los cambios a un solo file o carpeta
+git show dasdsadas															// Nos muestra cambio detallados de un commit
 
 
 
 
 
-subl .gitignore											// Se crea el gitIgnore colocando .DS_Store
- .DS_Store 												// Dentro del archivo especificamos que archivos queremos que sean ignorados por git
-	
-git diff												// Muestra las diferencias entre lo que esta en Workdirectory y Staging
-git difftool											// Usa P4Merge (configurado previamente) para ver las diferencias entre W y S
 
-git diff HEAD											// Muestra las diferencias entre lo que esta en Workdirectory y Repository(.git folder) 
-git difftool HEAD										// Usa P4Merge (configurado previamente) para ver las diferencias entre W y R
+subl .gitignore																// Se crea el gitIgnore colocando .DS_Store
+ .DS_Store 																	// Dentro del archivo especificamos que archivos queremos que sean ignorados por git
+						
+git diff																	// Muestra las diferencias entre lo que esta en Workdirectory y Staging
+git difftool																// Usa P4Merge (configurado previamente) para ver las diferencias entre W y S
+					
+git diff HEAD																// Muestra las diferencias entre lo que esta en Workdirectory y Repository(.git folder) 
+git difftool HEAD															// Usa P4Merge (configurado previamente) para ver las diferencias entre W y R
+					
+git diff --staged HEAD														// Muestra las diferencias entre lo que esta en Staging y Repository
+git difftool --staged HEAD													// Usa P4Merge (configurado previamente) para ver las diferencias entre S y R
+					
+git diff HEAD HEAD^															// Muestra las diferencias entre el ultimo commit y el commit anterior
+git difftool HEAD HEAD^														// Usa P4Merge (configurado previamente) para ver las diferencias entre el ultimo commit y el anterior
+					
+git diff dasdsa dsadsa														// Muestra las diferencias entre un commit y otro
+git difftool dsadsa sadsad													// Usa P4Merge (configurado previamente) para ver las diferencias entre un commit y otro
+					
+git diff master origin/master												// Muestra las diferencias entre el repositorio local y el repositorio de github
+git difftool master origin/master											// Usa P4Merge (configurado previamente) para ver las diferencias entre Local y Github
 
-git diff --staged HEAD									// Muestra las diferencias entre lo que esta en Staging y Repository
-git difftool --staged HEAD								// Usa P4Merge (configurado previamente) para ver las diferencias entre S y R
 
-git diff HEAD HEAD^										// Muestra las diferencias entre el ultimo commit y el commit anterior
-git difftool HEAD HEAD^									// Usa P4Merge (configurado previamente) para ver las diferencias entre el ultimo commit y el anterior
 
-git diff dasdsa dsadsa									// Muestra las diferencias entre un commit y otro
-git difftool dsadsa sadsad								// Usa P4Merge (configurado previamente) para ver las diferencias entre un commit y otro
-
-git diff master origin/master							// Muestra las diferencias entre el repositorio local y el repositorio de github
-git difftool master origin/master						// Usa P4Merge (configurado previamente) para ver las diferencias entre Local y Github
