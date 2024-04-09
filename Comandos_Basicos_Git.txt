@@ -8,6 +8,8 @@ git config --global user.email nibi.sin@hotmail.com							// Colocar el e-mail e
 //Inicio para crear un proyecto en git
 git init																	// crea repositorio git	
 git remote add origin https://github.com/Nib1sin/Querys.git					// url del repositorio en github
+git remote -v																// Verifica la configuración actual del control remoto "origin" 
+git push -u origin master													// enviar tus cambios al repositorio remoto
 echo "# Pruebita" >> README.md												// Creando el archivo readme
 
 
@@ -21,6 +23,14 @@ git pull origin master														// verificar el repositorio en github
 git status																	// Nos muestra el status en git
 git config --global --list													// Nos muestra una lista con las configuraciones
 subl ~/.gitconfig															// Abrir la configuracion de git con sublime3 (path)
+
+
+
+//Comando para agregar tu key ssh en github 	https://www.youtube.com/watch?v=X40b9x9BFGo&t=12s
+ssh-keygen -t ed25519 -C "your_email@example.com"							// Genera una ssh para el correo especificado
+clip < ~/.ssh/id_ed25519.pub												// Utiliza la key creada para autenticar
+
+
 
 
 
