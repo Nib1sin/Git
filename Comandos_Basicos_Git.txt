@@ -85,4 +85,4 @@ git diff master origin/master												// Muestra las diferencias entre el rep
 git difftool master origin/master											// Usa P4Merge (configurado previamente) para ver las diferencias entre Local y Github
 
 
-
+git checkout stash -- .														// Aplica el stash en modo hard
